@@ -1,3 +1,15 @@
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 800;
+  font-style: normal;
+  color: thistle;
+}
+
+h2
+{
+  font-family: "Crafty Girls", cursive;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -48,3 +60,13 @@ input, textarea {
   margin-bottom: 10px;
 }
 
+
+.pasdemargin
+{
+  margin: 0;
+}
+
+a {
+  color: rgb(155, 118, 74);
+  text-decoration: none;
+}
