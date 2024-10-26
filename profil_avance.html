@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nada Marnissi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Nada Marnissi</h1>
+    
+    <section >
+      <h2 class="apropos">A propos de moi</h2>
+      <p>
+        Bonjour ! Je m'appelle Nada Marnissi et j'ai 21 ans. Je suis passionnée
+        par la mode et découvrir de nouvelle choses , et j'adore explorer de
+        nouvelles idées et relever des défis créatifs. Actuellement, je suis
+        étudiante en 3iem année ingénierie d’informatique En dehors de mes
+        études ou de mon travail, j'apprécie voyager, lire, regarder des films
+        et séries. Je suis ravie de partager mes projets et d'échanger avec
+        d'autres passionnés !
+      </p>
+      <img src="/portrait.jpeg" width="500px" height="700px" />
+    </section>
+    
+    <section>
+      <h2>Hobbies et objectifs</h2>
+      <ul>Mes Hobbies
+        <li>Voyager</li>
+        <li>Lire</li>
+        <li>Ecouter de la musique</li>
+      </ul>
+      <ol>Mes Objectifs
+        <li>Explorer de nouvelles choses</li>
+        <li>Se concenter sur soie meme</li>
+      </ol>
+    </section>
+    
+    <section style="overflow-x: auto;">
+      <h2>Tableau d'amis</h2>
+      <table>
+        <tr>
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Age</th>
+          <th>Ville</th>
+          <th>Lien du profil</th>
+        </tr>
+        <tr>
+          <td>Laaziz</td>
+          <td>Wissal</td>
+          <td>20ans</td>
+          <td>Casablanca</td>
+          <td> <a href="https://www.wissallaaziz.com">Site</a> </td>
+        </tr>
+        <tr>
+          <td>Aynaou</td>
+          <td>Chaymae</td>
+          <td>22ans</td>
+          <td>Kragujevac</td>
+          <td> <a href="https://www.chaymaeaynaou.com">Site</a></td>
+        </tr>
+        
+        <tr>
+          <td>Alouardi</td>
+          <td>Mohammed</td>
+          <td>21ans</td>
+          <td>Nottingham</td>
+          <td> <a href="https://www.ouardito.com">Site</a></td>
+        </tr>
+        
+      </table>
+    </section>
+    
+    <section>
+      <form action="/submit" method="post">
+        <h1>Contactez moi ci-dessous</h1>
+        
+        <p>Votre Nom</p>
+        <input type="text" name="Nom" id="champNom" required>
+
+        <p>Votre Email</p>
+        <input type="email" name="email" id="champEmail" required>
+        
+        <p>Votre Message</p>
+        <textarea name="message" id="champMessage" cols="60" rows="10" required></textarea>
+
+        <button type="submit"> Submit</button>
+      </form>
+
+    </section>
+
+  </body>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', validerTout);
+
+    function validerTout(event)
+    {
+      const inputEmail = document.getElementById("champEmail").value;
+        if(!isValidEmail(inputEmail) )
+        {
+          alert("Veuillez saisir un email conforme");
+          event.preventDefault();
+        }
+    }
+
+    function isValidEmail(email)
+    {
+      var emailReg = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/i);
+      return emailReg.test(email);
+    }
+
+  </script>
+
+  </html>

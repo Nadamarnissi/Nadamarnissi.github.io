@@ -1,0 +1,50 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+img
+{
+  width: 70%;
+  height: 70%;
+  }
+
+th {
+  background-color: brown;
+  border-color: red; 
+}
+
+td {
+  background-color: bisque;
+  
+}
+
+section{
+  background-color: beige;
+  border: 5px solid rgb(237, 222, 222);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black; 
+}
+
+.apropos
+{
+  color: brown;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input, textarea {
+  width: calc(100% - 120px);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
